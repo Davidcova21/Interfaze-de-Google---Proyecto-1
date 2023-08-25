@@ -1,0 +1,170 @@
+/*Estilos globales para el cuerpo del documento*/
+body{
+    margin:0; /* Elimina los margenes por defecto*/
+    padding: 0; /*Elimina el padding por defecto*/
+    font-size: 13px; /*Tamano de fuente base para el documento*/
+    font-family: Arial, Helvwtica, sans-serif; /* Fuente por defecto para el documento*/
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none; /*Elimina la subrayado de los enlaces */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima de un enlace */
+}
+
+/* Estilos para la cabecera del documento */
+header{
+    width: 100%; /* Ancho completo */
+    height: 60px; /*Altura fija */
+}
+
+/* Estilos para la navegacion dentro de la cabecera */
+header nav{
+    display: flex; /* Utiliza flexbox para la disposicion de los elementos */
+    justify-content: flex-end; /*Alinea los elementos a la cabecera */
+}
+
+/*Estilos para la seccion derecha de la navegacion */
+header nav .nav-right-section {
+    width: 250px; /* Amcho fijo */
+    height: auto; /* Altura automatica */
+    display: flex; /* Utiliza flexbox para la disposicion de los elementos */
+    list-style: none; /* Elimina los estilos por defecto de la lista */
+    justify-content: center; /*Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Estilos para los enlaces dentro de la seccion derecha de la navegacion */
+nav .nav-right-section a{
+    margin-right: 25px; /* Anade margen a la derecha para espacio entre elementos */
+    color: #000; /* Color de texto negro */
+}
+
+/* Estilos para las imagenes dentro de la seccion derecha de la navegacion */
+nav .nav-right-section img{
+    border-radius: 50px; /* Bordes redondeados para las imagenes */
+    margin-left: 10px; /* Anade margen a la izquierda para espacio entre elementos */
+    width: 40px; /* Ancho fijo para las imagenes */
+    height: 40px; /* Altura fija para las imagenes */
+}
+
+/* Estilos para la seccion principal del documento */
+main{
+    margin-top: 150px; /* Anade margen superior para espacio desde la cabecera */
+    text-align: center; /* Centra el texto y los elementos en linea */
+}
+
+/* Estilos para el logo dentro de la seccion  principal */
+main .main-logo{
+    width: 530px; /* Ancho fijo para el logo */
+    margin: 0 auto; /* Centra el logo horizontalmente */
+    margin-bottom: 35px; /* Anade margen inferior para espacio desde el siguiente elemento */
+}
+
+/* Estilos para la imagen del logo */
+main .main-logo img{
+    width: 330px; /* Ancho fijo para la imagen del logo */
+    height: 120px; /* Altura fija para la imagen del logo */
+}
+
+/* Estilos para el campo de busqueda */
+main .main-input{
+    width: 530px; /* Ancho fijo para el campo de busqueda */
+    margin: 0 auto; /* Centra el campo de busqueda horizontalmente */
+    margin-bottom: 35px; /* Anade margen inferior para espacio desde el siguiente elemento */
+}
+
+/* Estilos para el contenedor del campo de busqueda */
+main .main-input-container{
+    width: 525px; /* Ancho fijo para el contenedor del campo de busqueda */
+    border-radius: 100px; /* Bordes redondeados para el contenedor del campo de busqueda */
+    border: 1px solid #dfe1e5; /* Anade un borde al contenedor del campo de busqueda */
+    display: flex; /* Utiliza flexbox para la disposicion de los elementos */
+    justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 10px; /* Anade padding para espacio alrededor del contenido */
+}
+
+/* Estilos para el input del campo de busqueda */
+main .main-input input{
+    flex-grow: 1; /* Permite que el input crezca para llenar el espacio disponible */
+    height: 40px; /* Altura fija para el input */
+    border: none; /* Elimina el borde del input */
+    outline: none; /* Elimina el outline del input */
+}
+
+/* Estilos para el contenedor del campo de busqueda cuando se pasa el cursor por encima */
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447; /* Anade una sombra cuando se pasa el cursor por encima */
+    border-color: #dfe1e500; /* Cambia el color del borde cuando se pasa el cursor por encima */
+}
+
+/* Estilos para las imagenes del icono de busqueda y del microfono */
+main .main-input .search-icon, .main-input .micro-icon{
+    width: 24px; /* Ancho fijo para las imagenes */
+    height: 24px; /* Altura fija para las imagenes */
+}
+
+/* Estilos para la seccion de botones */
+main .main-buttons{
+    width: 530px; /* Ancho fijo para la seccion de botones */
+    margin: 0 auto; /* Centra la seccion de botones horizontalmente */
+}
+
+/* Estilos para los botones */
+main .main-buttons button{
+    height: 36px; /*Altura fija para los botones */
+    background-color: #f2f2f2; /* Color de fondo para los botones */
+    border: 0; /* Elimina el borde de los botones */
+    font-size: 14px; /* Tamano de fuente para los botones */
+    color: #5f6368; /* Color de texto para los botones */
+    border-radius: 8px; /* Bordes redondeados para los botones */
+    padding: 0 15px; /* Anade padding para espacio alrededor del texto de los botones */
+    margin: 10px; /* Anade margen para espacio alrededor de los botones */
+}
+
+/* Estilos para los botones cuando se pasa el cursor por encima */
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6; /* Anade un borde cuando se pasa el cursor por encima */
+    box-shadow: 0 1px 1px #000001; /* Anade una sombra cuando se pasa el cursor por encima */
+    color: #222; /* Cambia el color de texto cuando se pasa el cursor por encima */
+}
+
+/* Estilos para el pie de pagina */
+footer{
+    width: 100%; /* Ancho completo */
+    height: 50px; /* Altura fija */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 0; /* Situa el pie de pagina en la parte inferior de la pagina */
+    display: grid; /* Utiliza grid para la disposicion de los elementos */
+    grid-template-columns: 1fr 1fr; /* Divide el pie de la pagina en dos columnas de igual tamano */
+    align-items: center; /* Centra los elementos verticalmente */
+    font-size: 13px; /* Tamano de fuente para el pie de pagina */
+    background-color: #f2f2f2; /* Color de fondo para el pie de pagina */
+    border-top: 1px solid #e4e4e4; /* Anade un borde superior al pie de pagina */
+}
+
+/* Estilos para las listas dentro del pie de pagina */
+footer ul{
+    margin: 10px; /* Anade margen para espacio alrededor de las listas */
+    list-style: none; /* Elimina los estilos por defecto de la lista */
+    display: flex; /* Utiliza flexbox para la disposicion de los elementos */
+    padding-left: 0; /* Elimina el padding izquierdo por defecto de la lista */
+}
+
+/* Estilos para la lista de la seccion izquierda del pie de pagina */
+footer .footer-left {
+    justify-self: left; /* Alinea la lista a la izquierda de su seccion */
+}
+
+/* Estilos para la lista de la seccion derecha del pie de pagina */
+footer .footer-right {
+    justify-self: right; /* Alinea la lista a la derecha de su seccion */
+}
+
+/* Estilos para los enlaces dentro de las listas del pie de pagina */
+footer ul li a {
+    margin: 10px; /* Anade margen para espacio alrededor de los enlaces */
+    color: #5f6368; /* Color de texto para los enlaces */
+}
+    
